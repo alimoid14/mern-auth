@@ -13,9 +13,6 @@ const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
 /* -----------------App routes here--------------- */
-app.get("/", (req, res) => {
-  res.send("hello bruv yea!");
-});
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json()); //It allows us to parse incoming requests with JSON payloads: req.body
